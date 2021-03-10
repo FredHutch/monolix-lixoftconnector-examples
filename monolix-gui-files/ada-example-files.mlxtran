@@ -1,0 +1,66 @@
+<DATAFILE>
+
+[FILEINFO]
+file='../data/monolix-fake-data.csv'
+delimiter = comma
+header = {ID, TIME, AMT, DV}
+
+[CONTENT]
+ID = {use=identifier}
+TIME = {use=time}
+AMT = {use=amount}
+DV = {use=observation, name=DV, type=continuous}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {CL_pop, omega_CL, Q_pop, omega_Q, Vc_pop, omega_Vc, Vp_pop, omega_Vp, kt_pop, omega_kt, time0_pop, omega_time0}
+
+DEFINITION:
+CL = {distribution=logNormal, typical=CL_pop, sd=omega_CL}
+Q = {distribution=logNormal, typical=Q_pop, sd=omega_Q}
+Vc = {distribution=logNormal, typical=Vc_pop, sd=omega_Vc}
+Vp = {distribution=logNormal, typical=Vp_pop, sd=omega_Vp}
+kt = {distribution=logNormal, typical=kt_pop, sd=omega_kt}
+time0 = {distribution=logNormal, typical=time0_pop, sd=omega_time0}
+
+[LONGITUDINAL]
+input = {b}
+
+file = '../ada_model.txt'
+
+DEFINITION:
+DV = {distribution=normal, prediction=centr, errorModel=proportional(b)}
+
+<FIT>
+data = DV
+model = DV
+
+<PARAMETER>
+CL_pop = {value=1, method=MLE}
+Q_pop = {value=1, method=MLE}
+Vc_pop = {value=1, method=MLE}
+Vp_pop = {value=1, method=MLE}
+b = {value=0.3, method=MLE}
+kt_pop = {value=1, method=MLE}
+omega_CL = {value=1, method=MLE}
+omega_Q = {value=1, method=MLE}
+omega_Vc = {value=1, method=MLE}
+omega_Vp = {value=1, method=MLE}
+omega_kt = {value=1, method=MLE}
+omega_time0 = {value=1, method=MLE}
+time0_pop = {value=1, method=MLE}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, covariatemodeldiagnosis, obspred, vpc, residualsscatter, residualsdistribution, randomeffects, saemresults })
+
+[SETTINGS]
+GLOBAL:
+exportpath = 'ada-example-files'
+

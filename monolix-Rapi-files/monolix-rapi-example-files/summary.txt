@@ -1,0 +1,120 @@
+********************************************************************************
+*                      monolix-rapi-example-files.mlxtran                      *
+*                      March 10, 2021 at 15:50:42                              *
+*                      Monolix version : 2020R1                                *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------     se_sa    rse(%)
+CL_pop      :                        0.167    0.0398      23.8
+Vc_pop      :                        0.336     0.148        44
+Q_pop       :                        0.662     0.416      62.9
+Vp_pop      :                        0.534     0.169      31.7
+time0_pop   :                         11.9     0.658      5.51
+kt_pop      :                         1.44       nan       nan
+
+Standard Deviation of the Random Effects -
+omega_CL    :                        0.573     0.172      29.9
+omega_Vc    :                        0.492       nan       nan
+omega_Q     :                         1.24     0.518      41.8
+omega_Vp    :                        0.557     0.183      32.9
+omega_time0 :                        0.106       nan       nan
+omega_kt    :                        0.906       nan       nan
+
+Error Model Parameters -------------------
+b           :                        0.236       nan       nan
+
+Elapsed time (seconds) :      63
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Distribution ------------
+              min        Q1    median        Q3       max
+CL    :    0.0996    0.0997     0.131     0.362     0.368
+Vc    :     0.319     0.322     0.407     0.422     0.427
+Q     :     0.149     0.157     0.762       1.7      1.71
+Vp    :     0.326     0.334     0.422      1.02      1.02
+time0 :      11.1      11.6      12.5        13        13
+kt    :      1.07      1.19      1.31      4.99      11.1
+
+Elapsed time (seconds) :      22
+
+ -------------------------------------------------------------------------------
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+              min        Q1    median        Q3       max
+CL    :     0.101     0.102     0.131     0.358     0.363
+Vc    :     0.323     0.329      0.37     0.385     0.385
+Q     :     0.144     0.146     0.642      1.51      1.61
+Vp    :     0.313     0.319     0.405     0.969      1.01
+time0 :      11.3      12.2      12.5      13.1      13.3
+kt    :     0.934     0.983      1.14       3.8      5.79
+
+Elapsed time (seconds) :    0.47
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE FISHER INFORMATION MATRIX ____________________________________
+
+
+Estimation of the Fisher information matrix by Stochastic Approximation --------
+
+Correlation Matrix :
+     CL_pop         1
+     Vc_pop   0.11189         1
+      Q_pop -0.060436  -0.36975         1
+     Vp_pop -0.087195  -0.54214   0.31153         1
+  time0_pop   0.02729  0.072651  -0.19894 -0.077389         1
+     kt_pop       nan       nan       nan       nan       nan       nan
+   omega_CL -0.015469 0.0032262  0.013432  0.021005 -0.015256       nan         1
+   omega_Vc       nan       nan       nan       nan       nan       nan       nan       nan
+    omega_Q -0.016502  -0.16425   0.39364    0.1237   -0.1363       nan-0.0010493       nan         1
+   omega_Vp  0.024461  0.039716  0.045498  0.044335 -0.072718       nan-0.0048973       nan    0.1494         1
+omega_time0       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+   omega_kt       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+          b       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan       nan
+
+WARNING : Impossible to compute the eigen values of the correlation matrix.
+
+Elapsed time (seconds) :       1
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
+
+                                                            (is)
+-2 x log-likelihood                       (OFV) :         287.04
+Akaike Information Criteria               (AIC) :         313.04
+Corrected Bayesian Information Criteria  (BICc) :         332.87
+Bayesian Information Criteria             (BIC) :         310.34
+
+Elapsed time                          (seconds) :           6.69
+CPU time                              (seconds) :           6.00
+
+
+[Importance Sampling] Standard error        : 4.910
+                      Sampling distribution : T-distribution with 5 degrees of freedom
+
+ _______________________________________________________________________________
+
+DATASET INFORMATION
+Number of individuals: 6
+Number of observations (DV): 150
+Number of doses: 6
+

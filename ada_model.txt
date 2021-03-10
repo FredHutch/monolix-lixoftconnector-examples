@@ -1,0 +1,29 @@
+DESCRIPTION: Model description with a simple ODE representing a linear elimination precess of a volume
+
+[LONGITUDINAL]
+input = {CL, Vc, Q, Vp, time0, kt}
+
+PK:
+depot(target=centr, p = 1/Vc)
+
+EQUATION:
+odeType = stiff
+
+centr_0=0
+peri_0=0
+
+kout0=CL/Vc
+k12 = Q/Vc
+k21 = k12 * Vc/Vp
+
+if t<=time0
+   k = kout0
+else 
+   k = kout0 + kt * (t-time0)
+end
+       
+ddt_centr = -(k12+k)*centr + k21 * peri
+ddt_peri = k12*centr - k21*peri
+
+OUTPUT:
+output={centr}

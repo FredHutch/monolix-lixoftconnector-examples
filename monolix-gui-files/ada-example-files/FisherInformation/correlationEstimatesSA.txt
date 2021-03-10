@@ -1,0 +1,13 @@
+CL_pop,1,0.0893,nan,-0.0868,0.0817,nan,-0.082,nan,nan,0.0027,nan,0.108,nan
+Vc_pop,0.0893,1,nan,-0.548,0.173,nan,0.0687,nan,nan,-0.0722,nan,0.543,nan
+Q_pop,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+Vp_pop,-0.0868,-0.548,nan,1,-0.198,nan,0.003,nan,nan,0.0484,nan,-0.43,nan
+time0_pop,0.0817,0.173,nan,-0.198,1,nan,-0.0438,nan,nan,-0.0732,nan,0.365,nan
+kt_pop,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+omega_CL,-0.082,0.0687,nan,0.003,-0.0438,nan,1,nan,nan,0.00163,nan,0.00254,nan
+omega_Vc,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+omega_Q,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+omega_Vp,0.0027,-0.0722,nan,0.0484,-0.0732,nan,0.00163,nan,nan,1,nan,-0.045,nan
+omega_time0,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+omega_kt,0.108,0.543,nan,-0.43,0.365,nan,0.00254,nan,nan,-0.045,nan,1,nan
+b,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
