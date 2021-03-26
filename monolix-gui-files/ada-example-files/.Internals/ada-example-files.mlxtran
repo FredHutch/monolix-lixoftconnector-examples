@@ -63,4 +63,6 @@ plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, c
 [SETTINGS]
 GLOBAL:
 exportpath = '../'
+nbchains = 9
+autochains = no
 

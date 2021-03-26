@@ -47,9 +47,8 @@ monolix_fake_data <- read_csv(here("data", "monolix-fake-data.csv"))
 * Settings -> Project settings
     + Seed: 123456
     + Number of chains
-        + Automatic choice: TRUE
+        + Automatic choice: FALSE
         + Computed number of chains: 9 
-        + Minimum number of individuals: 50
     + Transition kernels
         + Target acceptance ratio: 0.3
         + Number of iterations of kernels: 2, 2, 2
@@ -183,11 +182,10 @@ getProjectSettings()$seed
 * Settings -> Project settings    
     + Number of chains
         + Automatic choice: TRUE
-        + Computed number of chains: 9 
-        + Minimum number of individuals: 50
+        + Computed number of chains: 9
 
 ```{r}
-setGeneralSettings(nbchains = 9)
+setGeneralSettings(nbchains = 9, autochains = FALSE)
 
 getGeneralSettings()
 ```
@@ -393,6 +391,8 @@ diffr(
 )
 ```
 
+<!-- remove for now -- summary.txt is sufficient
+
 ## populationParameters.txt
 
 ```{r}
@@ -429,4 +429,4 @@ diffr(
 )
 ```
 
-
+--> 

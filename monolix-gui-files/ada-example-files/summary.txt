@@ -1,6 +1,6 @@
 ********************************************************************************
 *                          ada-example-files.mlxtran                           *
-*                          March 10, 2021 at 14:41:42                          *
+*                          March 26, 2021 at 11:25:10                          *
 *                          Monolix version : 2020R1                            *
 ********************************************************************************
 
@@ -26,7 +26,7 @@ omega_kt    :                        0.886     0.392      44.3
 Error Model Parameters -------------------
 b           :                        0.252       nan       nan
 
-Elapsed time (seconds) :      72
+Elapsed time (seconds) :      81
 
  _______________________________________________________________________________
 
@@ -44,7 +44,7 @@ Vp    :     0.294     0.298     0.442     0.973      1.05
 time0 :      10.6      10.9      12.4      12.6      12.7
 kt    :     0.817      0.85      1.08      3.67      4.94
 
-Elapsed time (seconds) :      21
+Elapsed time (seconds) :      24
 
  -------------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ Vp    :     0.297     0.297     0.467     0.932      1.03
 time0 :        12      12.4      12.6        13      14.3
 kt    :      0.72     0.805     0.894      2.18      2.83
 
-Elapsed time (seconds) :    0.49
+Elapsed time (seconds) :    0.63
 
  -------------------------------------------------------------------------------
 
@@ -88,7 +88,7 @@ omega_time0       nan       nan       nan       nan       nan       nan       na
 
 WARNING : Impossible to compute the eigen values of the correlation matrix.
 
-Elapsed time (seconds) :     2.8
+Elapsed time (seconds) :     3.4
 
  -------------------------------------------------------------------------------
 
@@ -104,7 +104,7 @@ Akaike Information Criteria               (AIC) :         426.66
 Corrected Bayesian Information Criteria  (BICc) :         446.49
 Bayesian Information Criteria             (BIC) :         423.95
 
-Elapsed time                          (seconds) :           6.20
+Elapsed time                          (seconds) :           6.21
 CPU time                              (seconds) :           6.00
 
 

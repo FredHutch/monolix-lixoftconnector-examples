@@ -64,4 +64,5 @@ plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, c
 GLOBAL:
 exportpath = 'monolix-rapi-example-files'
 nbchains = 9
+autochains = no
 

@@ -63,4 +63,6 @@ plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, c
 [SETTINGS]
 GLOBAL:
 exportpath = 'ada-example-files'
+nbchains = 9
+autochains = no
 
